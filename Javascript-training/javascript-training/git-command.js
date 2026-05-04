@@ -24,5 +24,5 @@ Daily use command
 
 git status
 git add .
-git commit -m "message"
+g
 git push origin master */
