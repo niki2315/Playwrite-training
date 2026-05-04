@@ -3,7 +3,8 @@
  
 
 step 1- git init
-step 2 - git remote add origin https://github.com/shivginilytics/Assignment.git
+step 2 - 
+git git https://github.com/shivginilytics/Assignment.git
 step 3 - git status
 step 4 - git add <filename> or git .
 step 5 - git commit -m "message"
