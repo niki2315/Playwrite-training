@@ -13,3 +13,23 @@ console.error is meant for printing the error message to indicate something went
 console.info("This is an informational Message to User"); // For informational message
 console.warn("This is a warning message to alert the users"); // for warning message
 console.error("This is a error message"); // For error message
+
+
+let personDetails = {
+  temperature: 25.5,
+  hasPlacedOrder: true,
+  phoneNumber: "123-456-7890",
+  accountBalance: 1000.50,
+  email: "john.doe@example.com",
+  location: {
+    latitude: 37.7749,
+    longitude: -122.4194
+  },
+  isMarried: false,
+  occupation: "Software Engineer",
+  favouriteColor: "Blue",
+  currentYear: 2023,
+  followers: 1000000
+};
+console.log(personDetails.phoneNumber);
+console.log("Phone Number:", personDetails.phoneNumber);
