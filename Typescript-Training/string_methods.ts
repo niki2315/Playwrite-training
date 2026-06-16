@@ -62,3 +62,74 @@ console.log("6. Removing all the alphabets from the string.");
 let stringWithoutAlphabets: string = originalString.replace(/[a-zA-Z]/g, '');
 console.log("Original String: '" + originalString+ "'");
 console.log("String Without Alphabets: '" +stringWithoutAlphabets + "'");
+
+//7. Removing all the numbers from the string ==> string.replace(/\s+/g, '')
+console.log("7. Removing all the numbers from the string");
+let stringWithoutNumbers : string = originalString.replace(/[0-9]/g, '');
+console.log("Original String: '" + originalString+ "'");
+console.log("String Without Numbers: '" +stringWithoutNumbers + "'");
+ 
+//8. Removing all the special character from the string ==> string.replace(/[^a-zA-Z0-9]/g, '')
+console.log("8. Removing all the special character from the string");
+let stringWithoutSpecialChar : string = originalString.replace(/[^a-zA-Z0-9 ]/g, '');
+console.log("Original String: '" + originalString+ "'");
+console.log("String Without Numbers: '" +stringWithoutSpecialChar + "'");
+ 
+//9. Converting the string to Uppercase. ==> string.toUpperCase()
+console.log("9. Converting the string to Uppercase.");
+let upperCaseString : string = originalString.toUpperCase();
+console.log("Original String: '" + originalString+ "'");
+console.log("String Without Numbers: '" +upperCaseString + "'");
+ 
+//10. Converting the string to Lowercase. ==> string.toLowerCase()
+console.log("9. Converting the string to Lowercase.");
+let lowerCaseString : string = originalString.toLowerCase();
+console.log("Original String: '" + originalString+ "'");
+console.log("String Without Numbers: '" +lowerCaseString + "'");
+ 
+//11. Extracting a part of the string based on the starting and ending index ==> string.substring(startIndex, endIndex)
+console.log("11. Extracting a part of the string based on the starting and ending index");
+let unsername: string = originalString.substring(12, 17);
+let password: string = originalString.substring(31);
+console.log("Original String: '" + originalString+ "'");
+console.log("Extracting Sub String: '" +unsername+ "'");
+console.log("Extracting Sub String: '" +password+ "'");
+ 
+//12. Splitting the string based on a specific seperator ==> string.split(separator)
+console.log("12. Splitting the string based on a specific seperator");
+let stringParts : string[] = originalString.split(' ');
+let user : string = stringParts[3]!;
+let pass : string = stringParts[7]!;
+console.log("Original String: '" + originalString+ "'");
+console.log("Extracted Username: '" +user+ "'");
+console.log("Extracted password: '" +pass+ "'");
+ 
+//13. Compare two different strings.
+//==== operator for strict equality (case-sensitive)
+//== operator for loose equality (case-insensitive)
+//include() method for substring presence check
+//startwith() method for prefix check
+//endWith() method for suffix check
+console.log("13. Compare two different strings.");
+let stringA : string = "TypeScript";
+let stringB : string = "typescript";
+console.log("String A: '" +stringA+ "'");
+console.log("String B: '" +stringB+ "'");
+console.log("Are both string Strictly equal? " +(stringA===stringB)); //Output : false
+console.log("TrypeScript contains 'Script'? " + stringA.includes("Script")); //Output : true
+console.log("TrypeScript contains 'script'? " + stringA.includes("script")); //Output : false
+console.log("TrypeScript starts with 'Type'? " + stringA.startsWith("Type")); //Output :true
+console.log("TrypeScript starts with 'Pipe'? " + stringA.startsWith("Pipe")); //Output :false
+console.log("TrypeScript ends with 'Script'? " + stringA.endsWith("Script")); //Output :true
+console.log("TrypeScript ends with 'Script'? " + stringA.endsWith("Scripts")); //Output :false
+ 
+//14. Data Conversions
+// Convert other data type to string. ==> String(value)
+// convert string to other data type. ==> parseInt(string), parseFloat(string), Boolean(string)
+console.log("14. Data Conversions");
+let stdCode : number = 155;
+let phone: number = 123456;
+let stdCodeString : string = String(stdCode);
+console.log(stdCodeString+phone);
+ 
+// I want to verify whether my account is having minimum balance of 10000 or not
